@@ -384,6 +384,12 @@
   }
   .quotes-note{text-align:center;color:var(--ink-soft);font-size:.82rem;margin-top:1.6rem;max-width:62ch;margin-inline:auto;opacity:.85}
   .footer-disclaimer{font-size:.82rem;color:rgba(255,255,255,.62);line-height:1.65;max-width:92ch;margin:1.6rem auto .8rem;text-align:center}
+  .urgency{display:flex;align-items:flex-start;gap:.5rem;font-size:.88rem;font-weight:700;color:var(--plum-deep);background:#FBEEDB;border:1px solid #ECD6B0;border-radius:12px;padding:.6rem .9rem;line-height:1.4;text-align:left;max-width:min(34rem,100%);margin-inline:auto}
+  .urgency svg{width:16px;height:16px;color:var(--gold);flex:none;margin-top:2px}
+  .urgency span{min-width:0}
+  .urgency--dark{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.28);color:#fff}
+  .urgency--dark svg{color:#F0C673}
+  .authority-line{font-weight:700;color:var(--plum);font-size:.97rem;line-height:1.45;margin-bottom:1.1rem;padding-left:.85rem;border-left:3px solid var(--rose)}
 </style>
 </head>
 <body>
@@ -422,8 +428,9 @@
           </p>
           <a class="btn btn--wa btn--lg" href="https://wa.me/5589994712984?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20sal%C3%A1rio-maternidade" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 1.67c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.42 5.82c0 4.54-3.7 8.24-8.25 8.24a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24zm-4.53 4.4c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.62 0 1.55 1.13 3.05 1.29 3.26.16.21 2.22 3.39 5.38 4.62 2.62 1.03 3.16.83 3.73.78.57-.05 1.84-.75 2.1-1.48.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.36-.31-.16-1.84-.91-2.12-1.01-.29-.1-.49-.16-.7.16-.21.31-.81 1.01-.99 1.22-.18.21-.36.23-.68.08-.31-.16-1.32-.49-2.51-1.55-.93-.83-1.56-1.85-1.74-2.16-.18-.31-.02-.48.14-.63.14-.14.31-.36.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.7-1.69-.96-2.31-.25-.61-.51-.53-.7-.54-.18-.01-.39-.01-.6-.01z"/></svg>
-            Falar no WhatsApp
+            Descobrir se tenho direito agora
           </a>
+          <p class="urgency"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span>O prazo para solicitar tem limite. Não deixe para depois.</span></p>
           <span class="cta-note">Avaliação sem compromisso.</span>
         </div>
         <p class="lgpd reveal d3">
@@ -451,40 +458,8 @@
     </div>
   </section>
 
-  <!-- ============ TWO-SOURCE EXPLAINER ============ -->
-  <section class="section section--sand" id="entenda">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">Entenda o seu direito</span>
-        <h2>Você pode ter direito, às vezes até em dobro</h2>
-        <p class="lead">O salário-maternidade alcança muitas situações: com ou sem carteira assinada, autônoma, contribuinte individual, trabalhadora rural e até quem está desempregada dentro do prazo de proteção. E, quando existem dois vínculos ao mesmo tempo, pode haver direito a dois benefícios. Veja um exemplo comum de quando isso acontece:</p>
-      </div>
-
-      <div class="sources">
-        <div class="source reveal">
-          <span class="tag"><span class="num">1º</span> Pago pela empresa</span>
-          <h3>Vínculo CLT</h3>
-          <p>Se você trabalha de carteira assinada, a empresa paga o salário-maternidade durante a sua licença. Esse é o benefício que quase toda gestante já conhece.</p>
-          <span class="pay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Direito já garantido pela CLT</span>
-        </div>
-        <div class="plus">+</div>
-        <div class="source reveal d2">
-          <span class="tag"><span class="num">2º</span> Pago pela Previdência</span>
-          <h3>Contribuinte individual</h3>
-          <p>Se, além do emprego, você também mantém a condição de contribuinte individual com contribuição válida, pode ter direito a um segundo salário-maternidade, pago diretamente pela Previdência.</p>
-          <span class="pay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Depende da avaliação do seu caso</span>
-        </div>
-      </div>
-
-      <div class="source-note reveal">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
-        <p><b>Importante:</b> esse segundo benefício existe em casos específicos, quando há dois vínculos reais e ativos ao mesmo tempo. Mas não se preocupe se você não se encaixa nesse exemplo. O salário-maternidade é um direito em muitas outras situações, e cada caso é diferente. Seja qual for o seu, o primeiro passo é o mesmo: falar comigo e avaliar a sua situação com clareza.</p>
-      </div>
-    </div>
-  </section>
-
   <!-- ============ PROBLEM ============ -->
-  <section class="section" id="por-que">
+  <section class="section section--sand" id="por-que">
     <div class="wrap">
       <div class="section-head reveal">
         <span class="eyebrow">O que mais atrapalha</span>
@@ -512,7 +487,7 @@
   </section>
 
   <!-- ============ SOBRE A ADVOGADA ============ -->
-  <section class="section section--sand" id="sobre">
+  <section class="section" id="sobre">
     <div class="wrap">
       <div class="about-grid">
         <div class="about-photo reveal">
@@ -522,6 +497,7 @@
         <div class="about-content reveal d1">
           <span class="eyebrow">Sobre a advogada</span>
           <h2>Prazer, sou a Andressa Rodrigues</h2>
+          <p class="authority-line">Dra. Andressa Rodrigues | OAB/PI 20.118 | Especialista em Direito Previdenciário</p>
           <p>Advogada inscrita na OAB/PI 20.118, dedicada ao Direito Previdenciário com foco em salário-maternidade. Meu trabalho é cuidar para que mães e futuras mães recebam o benefício a que têm direito, com um atendimento próximo, humano e sem juridiquês.</p>
           <p>Acredito que cada gestante merece ser ouvida com atenção e orientada com clareza. Por isso conduzo cada caso de forma individual, do primeiro "oi" no WhatsApp até o acompanhamento do seu pedido, sempre explicando cada passo.</p>
           <div class="about-highlights">
@@ -529,7 +505,7 @@
             <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Foco em salário-maternidade</span>
             <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Atendimento 100% online</span>
           </div>
-          <a class="btn btn--wa" href="https://wa.me/5589994712984?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20sal%C3%A1rio-maternidade" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 1.67c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.42 5.82c0 4.54-3.7 8.24-8.25 8.24a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24zm-4.53 4.4c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.62 0 1.55 1.13 3.05 1.29 3.26.16.21 2.22 3.39 5.38 4.62 2.62 1.03 3.16.83 3.73.78.57-.05 1.84-.75 2.1-1.48.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.36-.31-.16-1.84-.91-2.12-1.01-.29-.1-.49-.16-.7.16-.21.31-.81 1.01-.99 1.22-.18.21-.36.23-.68.08-.31-.16-1.32-.49-2.51-1.55-.93-.83-1.56-1.85-1.74-2.16-.18-.31-.02-.48.14-.63.14-.14.31-.36.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.7-1.69-.96-2.31-.25-.61-.51-.53-.7-.54-.18-.01-.39-.01-.6-.01z"/></svg>Falar no WhatsApp</a>
+          <a class="btn btn--wa" href="https://wa.me/5589994712984?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20sal%C3%A1rio-maternidade" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 1.67c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.42 5.82c0 4.54-3.7 8.24-8.25 8.24a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24zm-4.53 4.4c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.62 0 1.55 1.13 3.05 1.29 3.26.16.21 2.22 3.39 5.38 4.62 2.62 1.03 3.16.83 3.73.78.57-.05 1.84-.75 2.1-1.48.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.36-.31-.16-1.84-.91-2.12-1.01-.29-.1-.49-.16-.7.16-.21.31-.81 1.01-.99 1.22-.18.21-.36.23-.68.08-.31-.16-1.32-.49-2.51-1.55-.93-.83-1.56-1.85-1.74-2.16-.18-.31-.02-.48.14-.63.14-.14.31-.36.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.7-1.69-.96-2.31-.25-.61-.51-.53-.7-.54-.18-.01-.39-.01-.6-.01z"/></svg>Descobrir se tenho direito agora</a>
         </div>
       </div>
     </div>
@@ -563,15 +539,47 @@
       <div class="steps-cta reveal">
         <a class="btn btn--wa btn--lg" href="https://wa.me/5589994712984?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20sal%C3%A1rio-maternidade" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 1.67c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.42 5.82c0 4.54-3.7 8.24-8.25 8.24a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24zm-4.53 4.4c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.62 0 1.55 1.13 3.05 1.29 3.26.16.21 2.22 3.39 5.38 4.62 2.62 1.03 3.16.83 3.73.78.57-.05 1.84-.75 2.1-1.48.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.36-.31-.16-1.84-.91-2.12-1.01-.29-.1-.49-.16-.7.16-.21.31-.81 1.01-.99 1.22-.18.21-.36.23-.68.08-.31-.16-1.32-.49-2.51-1.55-.93-.83-1.56-1.85-1.74-2.16-.18-.31-.02-.48.14-.63.14-.14.31-.36.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.7-1.69-.96-2.31-.25-.61-.51-.53-.7-.54-.18-.01-.39-.01-.6-.01z"/></svg>
-          Falar no WhatsApp
+          Descobrir se tenho direito agora
         </a>
         <p class="cta-note">Conversa inicial sem compromisso.</p>
       </div>
     </div>
   </section>
 
+  <!-- ============ TWO-SOURCE EXPLAINER ============ -->
+  <section class="section" id="entenda">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Entenda o seu direito</span>
+        <h2>Você pode ter direito, às vezes até em dobro</h2>
+        <p class="lead">O salário-maternidade alcança muitas situações: com ou sem carteira assinada, autônoma, contribuinte individual, trabalhadora rural e até quem está desempregada dentro do prazo de proteção. E, quando existem dois vínculos ao mesmo tempo, pode haver direito a dois benefícios. Veja um exemplo comum de quando isso acontece:</p>
+      </div>
+
+      <div class="sources">
+        <div class="source reveal">
+          <span class="tag"><span class="num">1º</span> Pago pela empresa</span>
+          <h3>Vínculo CLT</h3>
+          <p>Se você trabalha de carteira assinada, a empresa paga o salário-maternidade durante a sua licença. Esse é o benefício que quase toda gestante já conhece.</p>
+          <span class="pay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Direito já garantido pela CLT</span>
+        </div>
+        <div class="plus">+</div>
+        <div class="source reveal d2">
+          <span class="tag"><span class="num">2º</span> Pago pela Previdência</span>
+          <h3>Contribuinte individual</h3>
+          <p>Se, além do emprego, você também mantém a condição de contribuinte individual com contribuição válida, pode ter direito a um segundo salário-maternidade, pago diretamente pela Previdência.</p>
+          <span class="pay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Depende da avaliação do seu caso</span>
+        </div>
+      </div>
+
+      <div class="source-note reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+        <p><b>Importante:</b> esse segundo benefício existe em casos específicos, quando há dois vínculos reais e ativos ao mesmo tempo. Mas não se preocupe se você não se encaixa nesse exemplo. O salário-maternidade é um direito em muitas outras situações, e cada caso é diferente. Seja qual for o seu, o primeiro passo é o mesmo: falar comigo e avaliar a sua situação com clareza.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- ============ WHY TRUST ============ -->
-  <section class="section" id="confianca">
+  <section class="section section--sand" id="confianca">
     <div class="wrap">
       <div class="section-head reveal">
         <span class="eyebrow">Confiança</span>
@@ -604,7 +612,7 @@
   </section>
 
   <!-- ============ TESTIMONIALS ============ -->
-  <section class="section section--sand" id="depoimentos">
+  <section class="section" id="depoimentos">
     <div class="wrap">
       <div class="section-head reveal">
         <span class="eyebrow">Depoimentos</span>
@@ -633,7 +641,7 @@
   </section>
 
   <!-- ============ FAQ ============ -->
-  <section class="section" id="duvidas">
+  <section class="section section--sand" id="duvidas">
     <div class="wrap">
       <div class="section-head reveal" style="text-align:center;margin-inline:auto">
         <span class="eyebrow" style="justify-content:center">Perguntas frequentes</span>
@@ -674,9 +682,10 @@
     <div class="wrap">
       <div class="final reveal">
         <h2>Seu bebê merece a sua dedicação. Sua renda merece proteção.</h2>
+        <div style="margin-bottom:1.5rem"><p class="urgency urgency--dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span>O prazo para solicitar tem limite. Não deixe para depois.</span></p></div>
         <a class="btn btn--wa btn--lg" href="https://wa.me/5589994712984?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20sal%C3%A1rio-maternidade" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 1.67c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.42 5.82c0 4.54-3.7 8.24-8.25 8.24a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24zm-4.53 4.4c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.62 0 1.55 1.13 3.05 1.29 3.26.16.21 2.22 3.39 5.38 4.62 2.62 1.03 3.16.83 3.73.78.57-.05 1.84-.75 2.1-1.48.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.36-.31-.16-1.84-.91-2.12-1.01-.29-.1-.49-.16-.7.16-.21.31-.81 1.01-.99 1.22-.18.21-.36.23-.68.08-.31-.16-1.32-.49-2.51-1.55-.93-.83-1.56-1.85-1.74-2.16-.18-.31-.02-.48.14-.63.14-.14.31-.36.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.7-1.69-.96-2.31-.25-.61-.51-.53-.7-.54-.18-.01-.39-.01-.6-.01z"/></svg>
-          Falar no WhatsApp
+          Descobrir se tenho direito agora
         </a>
       </div>
     </div>
@@ -715,7 +724,7 @@
 </footer>
 
 <!-- ============ FLOATING WHATSAPP ============ -->
-<a class="wa-float" href="https://wa.me/5589994712984?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20sal%C3%A1rio-maternidade" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+<a class="wa-float" href="https://wa.me/5589994712984?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20sal%C3%A1rio-maternidade" target="_blank" rel="noopener" aria-label="Descobrir se tenho direito agora">
   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 1.67c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.42 5.82c0 4.54-3.7 8.24-8.25 8.24a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24zm-4.53 4.4c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.62 0 1.55 1.13 3.05 1.29 3.26.16.21 2.22 3.39 5.38 4.62 2.62 1.03 3.16.83 3.73.78.57-.05 1.84-.75 2.1-1.48.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.36-.31-.16-1.84-.91-2.12-1.01-.29-.1-.49-.16-.7.16-.21.31-.81 1.01-.99 1.22-.18.21-.36.23-.68.08-.31-.16-1.32-.49-2.51-1.55-.93-.83-1.56-1.85-1.74-2.16-.18-.31-.02-.48.14-.63.14-.14.31-.36.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.7-1.69-.96-2.31-.25-.61-.51-.53-.7-.54-.18-.01-.39-.01-.6-.01z"/></svg>
 </a>
 
