@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Salário-Maternidade | Andressa Rodrigues Advocacia</title>
 <meta name="description" content="Muitas gestantes têm direito ao salário-maternidade e, em alguns casos, a um segundo benefício previdenciário. Avaliação do seu caso, atendimento online e sigiloso." />
+<!-- ===== Google Tag Manager ===== -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TVHS977J');</script>
+<!-- ===== Fim Google Tag Manager ===== -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -400,6 +407,11 @@
 </style>
 </head>
 <body>
+<!-- ===== Google Tag Manager (noscript) ===== -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVHS977J"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- ===== Fim Google Tag Manager (noscript) ===== -->
+
 
 <!-- ============ HEADER ============ -->
 <header class="site-header" id="top">
@@ -780,5 +792,70 @@
     upd();
   })();
 </script>
+
+<!-- ===== Eventos para o Google Tag Manager (dataLayer) ===== -->
+<script>
+(function(){
+  window.dataLayer = window.dataLayer || [];
+
+  function origemDoClique(a){
+    if (a.classList.contains('wa-float')) return 'botao_flutuante';
+    if (a.closest('footer')) return 'rodape';
+    var sec = a.closest('section');
+    if (sec && sec.id) {
+      var nomes = {
+        'quem-pode':'quem_pode', 'por-que':'por_que', 'sobre':'sobre',
+        'como-funciona':'passo_a_passo', 'entenda':'criterios',
+        'confianca':'confianca', 'depoimentos':'depoimentos',
+        'duvidas':'faq', 'contato':'cta_final'
+      };
+      return nomes[sec.id] || sec.id;
+    }
+    if (a.closest('.hero')) return 'topo_hero';
+    return 'outro';
+  }
+
+  /* Clique em qualquer botao de WhatsApp -> evento no dataLayer */
+  document.addEventListener('click', function(e){
+    var alvo = e.target;
+    if (!alvo || typeof alvo.closest !== 'function') return;
+    var a = alvo.closest('a[href*="wa.me"]');
+    if (!a) return;
+    window.dataLayer.push({
+      event: 'clique_whatsapp',
+      origem: origemDoClique(a),
+      texto_botao: (a.innerText || '').trim().slice(0, 60)
+    });
+  }, true);
+
+  /* Profundidade de rolagem: 25 / 50 / 75 / 100 por cento */
+  var marcos = [25, 50, 75, 100], vistos = {};
+  window.addEventListener('scroll', function(){
+    var h = document.documentElement;
+    var total = h.scrollHeight - h.clientHeight;
+    if (total <= 0) return;
+    var pct = Math.round(((window.scrollY || h.scrollTop) / total) * 100);
+    marcos.forEach(function(m){
+      if (pct >= m && !vistos[m]) {
+        vistos[m] = true;
+        window.dataLayer.push({ event: 'rolagem', profundidade: m });
+      }
+    });
+  }, {passive:true});
+
+  /* Qual duvida do FAQ o visitante abre */
+  document.querySelectorAll('.faq details').forEach(function(d){
+    d.addEventListener('toggle', function(){
+      if (!d.open) return;
+      var q = d.querySelector('summary');
+      window.dataLayer.push({
+        event: 'abriu_duvida',
+        pergunta: q ? (q.innerText || '').trim().slice(0, 80) : ''
+      });
+    });
+  });
+})();
+</script>
+<!-- ========================================================= -->
 </body>
 </html>
